@@ -1,0 +1,22 @@
+.box{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxDolar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(70, 176, 190);
+    width: 400px;
+    height: 30px;   
+}
+#dolar, #euro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 211, 211);
+    width: 400px;
+    height: 30px;   
+}
