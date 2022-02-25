@@ -18,6 +18,9 @@ Tabela de conteúdos
 
 ### 🛠 Tecnologias
 HTML, CSS e Javascript
+<br>
+<img src=https://github.com/Rodrigues-PauloRicardo/API-Cotacao-Comercial/blob/main/capturaImg.png>
+<br>
 
 
 <h2>MIT License</h2>
