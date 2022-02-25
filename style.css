@@ -1,3 +1,13 @@
+body{
+    background-color: cornflowerblue;
+}
+.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
 .box{
     margin-top: 180px;
     display: flex;
