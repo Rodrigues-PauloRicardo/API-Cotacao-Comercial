@@ -1,4 +1,4 @@
-fetch (`https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL`) 
+fetch(`https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL`) 
 .then((response) =>
 response.json()
 )
@@ -7,7 +7,6 @@ response.json()
 .then(data => document.getElementById("dolar").innerHTML = (data.USDBRL.ask))
 .catch(err => console.log('ERROR 404'))
 
-
 fetch (`https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL`)
 .then((r) => 
 r.json()
@@ -15,5 +14,10 @@ r.json()
 .then(data => document.getElementById("euro").innerHTML = (data.EURBRL.ask))
 .catch(err => console.log('ERROR 404'))
 
-
+fetch (`https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL`) 
+.then((r) => 
+r.json()
+) 
+.then(data => document.getElementById("bitcoin").innerHTML = (data.BTCBRL.ask))
+.catch(err => console.log('ERROR 404'))
 
