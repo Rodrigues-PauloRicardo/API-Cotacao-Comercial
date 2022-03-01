@@ -4,7 +4,9 @@ body{
 section{
     margin-top: 100px;
 }
-.title{    
+.title{ 
+    display: flex;   
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     display: flex;
@@ -13,6 +15,17 @@ section{
 #current_date{
     font-size: 18px;
     margin-bottom: 15px;
+}
+.avisos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+input{  
+    border-radius: 5px;
+    margin: 2px;
+    width: 150px;
+    height:18px;
 }
 hr{
     width: 80%;

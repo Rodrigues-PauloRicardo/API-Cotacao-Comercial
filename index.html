@@ -11,10 +11,22 @@
 
     <section>
 
-    <div class="title">Cotação das moedas Dólar e Euro em relação ao Real</div>
+    <div class="title">Cotação das moedas Dólar,Euro e Bitcoin em relação ao Real</div>
     <hr>
     <div class="box">
         <div id="current_date"></div>
+        <hr>
+        <div class="avisos">
+            <div class="avisoDolar">Me avise se o Dólar baixar de 
+                <input type="text" onInput="mascaraMoeda(event)" name="avisoDolar" id="" value=""/>
+                </div>
+                <div class="avisoEuro">Me avise se o Euro baixar de 
+                    <input type="text" onInput="mascaraMoeda(event)" name="avisoEuro" id="" value=""/>
+                </div>
+                <div class="avisoBitcoin">Me avise se o Bitcoin baixar de 
+                    <input type="text" onInput="mascaraMoeda(event)" name="avisoEuro" id="" value=""/>
+                </div>
+        </div>
         <hr>
         <div class="boxTitle">Dólar</div>
            <div id="dolar">        
@@ -30,7 +42,8 @@
 </section>    
        
     
-<script src="cotacao.js"></script> 
+<script src="cotacao.js"></script>
+<script src="mascaraMoeda.js"></script> 
 <script src="date.js"></script>
 
 </body>
