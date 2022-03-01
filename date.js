@@ -16,3 +16,8 @@ document.getElementById('current_date').innerHTML = ("Hoje é dia " + dia + "/" 
 setTimeout(function() {
   window.location.reload(1);
 }, 60000);
+
+
+
+
+
