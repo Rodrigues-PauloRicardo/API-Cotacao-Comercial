@@ -14,10 +14,13 @@ Tabela de conteúdos
    * Hora e data de Brasília  
 <!--te-->
 
-[![Netlify Status]()
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58fbac56-8412-4a46-a92f-1ea824384880/deploy-status)](https://app.netlify.com/sites/api-cotacao-moeda/deploys)
 
 ### 🛠 Tecnologias
 HTML, CSS e Javascript
+<br>
+<img src=https://github.com/Rodrigues-PauloRicardo/API-Cotacao-Comercial/blob/main/capturaImg.png>
+<br>
 
 
 <h2>MIT License</h2>
