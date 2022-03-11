@@ -13,9 +13,10 @@ if(mes <=9){
 document.getElementById('current_date').innerText = ("Hoje é dia " + dia + "/" + mes + "/" + ano + " -  Agora são " + horas + ":" + minutos +" horário de Brasilia");
 
 
-setTimeout(function() {
+setTimeout(function () {
   window.location.reload(1);
-}, 60000);
+}, 60000)
+;
 
 
 
