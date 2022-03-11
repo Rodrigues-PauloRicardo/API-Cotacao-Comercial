@@ -22,6 +22,15 @@ r.json()
 .then(data => document.getElementById("bitcoin").innerHTML = (data.BTCBRL.ask))
 .catch(err => console.log('ERROR 404'))
 
+function funcao1(){
+    localStorage.dolarStorage = 0; 
+    document.getElementById('resDolar').innerText = "Último valor escolhido para aviso do dolar foi R$ " ;
+    localStorage.euroStorage = 0; 
+    document.getElementById('resEuro').innerText = "Último valor escolhido para aviso do dolar foi R$ " ;
+    localStorage.bitcoinStorage = 0; 
+    document.getElementById('resBitcoin').innerText = "Último valor escolhido para aviso do dolar foi R$ " ;
+}
+
 function valor(){
 let inputDolar = document.getElementById("inputDolar").value;
 let cleanInputDolar = inputDolar.replace(/[^0-9,]*/g, "").replace(",", ".");
@@ -38,10 +47,11 @@ let cleanInputBitcoin = inputBitcoin.replace(/[^0-9,]*/g, "").replace(",", ".");
 let valorDigitadoBitcoin = parseFloat(cleanInputBitcoin);
 localStorage.bitcoinStorage = valorDigitadoBitcoin;
 
-
-
 window.location.reload()  
 }
+
+
+
 
 myPromiseDolar.then((data) => {
     var dolar = (parseFloat(data))
@@ -77,4 +87,7 @@ myPromiseDolar.then((data) => {
                 }    
             })
 
-            
+           
+
+
+           
