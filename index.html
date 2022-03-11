@@ -27,7 +27,7 @@
                     <input type="text" onInput="mascaraMoeda(event)" name="avisoEuro" id="inputEuro" value=""/>
                 </div>
                 <div class="avisoBitcoin">Me avise se o Bitcoin baixar de 
-                    <input type="text" onInput="mascaraMoeda(event)" name="avisoEuro" id="" value=""/>
+                    <input type="text" onInput="mascaraMoeda(event)" name="avisoEuro" id="inputBitcoin" value=""/>
                 </div>
                 <input type="button" value="Gravar novo Valor" onclick="valor()"> 
         </div>
@@ -48,8 +48,24 @@
         <div class="boxTitle">Valor do Bitcoin Atualizado</div>
             <div id="bitcoin">         
         </div> 
+        <hr>
+        <div class="boxTitleDow"></div>
+           <div id="dolarDown" >        
+        </div> 
+        <div class="boxTitleDow"></div>
+            <div id="euroDown">         
+        </div> 
+        <div class="boxTitleDown"></div>
+            <div id="bitcoinDown">         
+        </div> 
     </div>
 </section>    
+
+<audio id="chatAudio" >
+    <source src=
+"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" 
+    type="audio/mpeg">
+</audio>
        
     
 <script src="cotacao.js"></script>

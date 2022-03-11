@@ -58,3 +58,21 @@ hr{
     width: 400px;
     height: 30px;   
 }
+#dolarDown, #euroDown, #bitcoinDown{
+    color: red;
+    font-size: 3em;
+    font-family: serif;
+    animation: animate 1.5s linear infinite;
+ } 
+  
+ @keyframes animate{
+   0%{
+     opacity: 0;
+   }
+   50%{
+     opacity: 0.7;
+   }
+   100%{
+     opacity: 0;
+   }
+ }

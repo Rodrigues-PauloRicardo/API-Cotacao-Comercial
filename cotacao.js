@@ -33,32 +33,48 @@ let cleanInputEuro = inputEuro.replace(/[^0-9,]*/g, "").replace(",", ".");
 let valorDigitadoEuro = parseFloat(cleanInputEuro);
 localStorage.euroStorage = valorDigitadoEuro;
 
+let inputBitcoin = document.getElementById("inputBitcoin").value;
+let cleanInputBitcoin = inputBitcoin.replace(/[^0-9,]*/g, "").replace(",", ".");
+let valorDigitadoBitcoin = parseFloat(cleanInputBitcoin);
+localStorage.bitcoinStorage = valorDigitadoBitcoin;
 
 
-window.location.reload(1)  
+
+window.location.reload()  
 }
 
 myPromiseDolar.then((data) => {
     var dolar = (parseFloat(data))
-    var valorMinimo = localStorage.dolarStorage; 
-   document.getElementById('resDolar').innerText = "Último valor escolhido para aviso do dolar foi R$ " + valorMinimo;
-        if(dolar < valorMinimo){
+    var valorMinimoDolar = localStorage.dolarStorage; 
+   document.getElementById('resDolar').innerText = "Último valor escolhido para aviso do dolar foi R$ " + valorMinimoDolar;
+        if(dolar < valorMinimoDolar){
             console.log("ATENÇÃO - Dólar Baixou para " + dolar)
+            var audio = document.getElementById('chatAudio');
+            audio.play()
+            document.getElementById('dolarDown').innerText = ('ATENÇÃO DÓLAR BAIXOU!!')
        }    
-    })
-   
+    })   
     myPromiseEuro.then((data) => {
         var euro = (parseFloat(data))
-        var valorMinimo = localStorage.euroStorage; 
-        document.getElementById('resEuro').innerText = "Último valor escolhido para aviso do dolar foi R$ " + valorMinimo;
-            if(euro < valorMinimo){
+        var valorMinimoEuro = localStorage.euroStorage; 
+        document.getElementById('resEuro').innerText = "Último valor escolhido para aviso do dolar foi R$ " + valorMinimoEuro;
+            if(euro < valorMinimoEuro){
                 console.log("ATENÇÃO - Euro Baixou para " + euro)
+                var audio = document.getElementById('chatAudio');
+                audio.play()
+                document.getElementById('euroDown').innerText = ('ATENÇÃO EURO BAIXOU!!')
             }    
         })
         myPromiseBitcoin.then((data) => {
             var bitcoin = (parseFloat(data))
-            var valorMinimo = 227.7436; 
-                if(bitcoin < valorMinimo){
+            var valorMinimoBitcoin = localStorage.bitcoinStorage; 
+            document.getElementById('resBitcoin').innerText = "Último valor escolhido para aviso do dolar foi R$ " + valorMinimoBitcoin;
+                if(bitcoin < valorMinimoBitcoin){
                     console.log("ATENÇÃO - Bitcoin Baixou para " + bitcoin)
+                    var audio = document.getElementById('chatAudio');
+                    audio.play()
+                    document.getElementById('bitcoinDown').innerText = ('ATENÇÃO BITCOIN BAIXOU!!')
                 }    
             })
+
+            
