@@ -10,7 +10,10 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * Título
-   * Moedas (Dolar, Euro e Bitcoin)
+   * Input´s para valores das Moedas (Dolar, Euro e Bitcoin)
+   * localStorage para armazenamento
+   * Alerta através de som e imagem de mudança de valor
+   * Sistema atualizado a cada minuto.
    * Hora e data de Brasília  
 <!--te-->
 
