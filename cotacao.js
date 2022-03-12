@@ -24,11 +24,11 @@ r.json()
 
 function funcaoClear(){
     localStorage.dolarStorage = 0; 
-    document.getElementById('resDolar').innerText = "Último valor escolhido para aviso do dolar foi R$ " ;
+    document.getElementById('resDolar').innerText = "Último valor escolhido para aviso-Dolar R$ " ;
     localStorage.euroStorage = 0; 
-    document.getElementById('resEuro').innerText = "Último valor escolhido para aviso do Euro foi R$ " ;
+    document.getElementById('resEuro').innerText = "Último valor escolhido para aviso-Euro R$ " ;
     localStorage.bitcoinStorage = 0; 
-    document.getElementById('resBitcoin').innerText = "Último valor escolhido para aviso do Bitcoin foi R$ " ;
+    document.getElementById('resBitcoin').innerText = "Último valor escolhido para aviso-Bitcoin R$ " ;
 
     var audio = document.getElementById('chatAudio');
        audio.pause();
