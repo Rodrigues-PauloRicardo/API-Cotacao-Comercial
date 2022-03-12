@@ -11,7 +11,7 @@ Tabela de conteúdos
 <!--ts-->
    * Título
    * Input´s para valores das Moedas (Dolar, Euro e Bitcoin)
-   * Localstorage para os valores
+   * localStorage para armazenamento
    * Alerta através de som e imagem de mudança de valor
    * Sistema atualizado a cada minuto.
    * Hora e data de Brasília  
