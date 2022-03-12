@@ -9,11 +9,17 @@ section{
 }
 .title{ 
     display: flex;   
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
-    display: flex;
-    justify-content: center;
+}
+.subtitle{
+    font-size: 1.5rem;
+}
+img{
+    width: 120px;
 }
 #current_date{
     font-size: 18px;
@@ -86,4 +92,8 @@ hr{
    100%{
      opacity: 0;
    }
+ }
+
+ footer{
+     margin-top: 8px;
  }
