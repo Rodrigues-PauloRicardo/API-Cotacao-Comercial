@@ -18,23 +18,33 @@
         <hr>
         <form action="">
         <div class="avisos">
-            <div class="avisoDolar">Me avise se o Dólar baixar de 
+            <div class="avisoDolar">Alerta se o Dólar baixar de 
                 
                 <input type="text" onInput="mascaraMoeda(event)" name="avisoDolar" id="inputDolar" value=""/>
                 </div>
            
-                <div class="avisoEuro">Me avise se o Euro baixar de 
+                <div class="avisoEuro">Alerta se o Euro baixar de 
                     <input type="text" onInput="mascaraMoeda(event)" name="avisoEuro" id="inputEuro" value=""/>
                 </div>
-                <div class="avisoBitcoin">Me avise se o Bitcoin baixar de 
+                <div class="avisoBitcoin">Alerta se o Bitcoin baixar de 
                     <input type="text" onInput="mascaraMoeda(event)" name="avisoEuro" id="inputBitcoin" value=""/>
                 </div>
-                <input type="button" value="Gravar novo Valor" onclick="valor()"> 
-                <input type="button" value="Limpar/Parar" onclick="funcao1()"> 
+                <input type="button" value="Gravar novo Valor" class='button' onclick="valor()"> 
+                <input type="button" value="Limpar/Parar" class='button' onclick="funcaoClear()"> 
                
         </div>
     </form> 
-    <hr> 
+        <hr> 
+            <div class="boxTitleDow"></div>
+           <div id="dolarDown" >        
+        </div> 
+        <div class="boxTitleDow"></div>
+            <div id="euroDown">         
+        </div> 
+        <div class="boxTitleDown"></div>
+            <div id="bitcoinDown">         
+        </div> 
+        <hr>
     <div class="resultEscolhas">
         <div id="resDolar"></div>
         <div id="resEuro"></div>
@@ -49,17 +59,7 @@
         </div> 
         <div class="boxTitle">Valor do Bitcoin Atualizado</div>
             <div id="bitcoin">         
-        </div> 
-        <hr>
-        <div class="boxTitleDow"></div>
-           <div id="dolarDown" >        
-        </div> 
-        <div class="boxTitleDow"></div>
-            <div id="euroDown">         
-        </div> 
-        <div class="boxTitleDown"></div>
-            <div id="bitcoinDown">         
-        </div> 
+        </div>         
     </div>
 </section>    
 

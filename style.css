@@ -2,19 +2,23 @@ body{
     background-color: cornflowerblue;
 }
 section{
-    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 .title{ 
     display: flex;   
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
 }
 #current_date{
     font-size: 18px;
     margin-bottom: 15px;
+    max-width: 80%;
 }
 .avisos{
     display: flex;
@@ -25,8 +29,15 @@ input{
     border-radius: 5px;
     margin: 2px;
     width: 150px;
-    height:18px;
+    height:18px;  
+    background-color: rgb(228, 220, 220);  
 }
+.button{
+    width: 158px;
+    height: 25px;
+    background-color: rgb(196, 188, 188);
+}
+
 hr{
     width: 80%;
 }
@@ -59,8 +70,8 @@ hr{
     height: 30px;   
 }
 #dolarDown, #euroDown, #bitcoinDown{
+    font-size: 5vw;
     color: red;
-    font-size: 3em;
     font-family: serif;
     animation: animate 1.5s linear infinite;
  } 
