@@ -23,7 +23,7 @@ Tabela de conteúdos
 ### 🛠 Tecnologias
 HTML, CSS e Javascript
 <br>
-<img src=https://github.com/Rodrigues-PauloRicardo/API-Cotacao-Comercial/blob/main/capturaImg.png>
+<img src=https://github.com/Rodrigues-PauloRicardo/API-Cotacao-Comercial/blob/main/capturaImg.jpg width="700px">
 <br>
 
 
