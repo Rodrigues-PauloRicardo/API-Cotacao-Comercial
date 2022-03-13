@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Cotação de moedas</title>
+    <title>Currency Quote</title>
 </head>
 <body>
 
     <section>
 
     <div class="title">
-        <img src="ilustracao.webp" alt="">
+        <img src="ilustracao.jpg" alt="imagem_logomarca_alarme_aviso">
         <div class="currency">Currency Quote</div>
     </div>
     <div class="subtitle">Dólar  --  Euro -- Bitcoin</div> 
@@ -22,11 +22,9 @@
         <hr>
         <form action="">
         <div class="avisos">
-            <div class="avisoDolar">Valor Mín. Dólar  
-                
+            <div class="avisoDolar">Valor Mín. Dólar                  
                 <input type="text" onInput="mascaraMoeda(event)" name="avisoDolar" id="inputDolar" value=""/>
-                </div>
-           
+                </div>           
                 <div class="avisoEuro">Valor Mín. Euro  
                     <input type="text" onInput="mascaraMoeda(event)" name="avisoEuro" id="inputEuro" value=""/>
                 </div>
@@ -34,8 +32,7 @@
                     <input type="text" onInput="mascaraMoeda(event)" name="avisoEuro" id="inputBitcoin" value=""/>
                 </div>
                 <input type="button" value="Gravar novo Valor" class='button' onclick="valor()"> 
-                <input type="button" value="Limpar/Parar" class='button' onclick="funcaoClear()"> 
-               
+                <input type="button" value="Limpar/Parar" class='button' onclick="funcaoClear()">                
         </div>
     </form> 
         <hr> 
@@ -72,8 +69,7 @@
     <source src=
 "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" 
     type="audio/mpeg">
-</audio>
-       
+</audio>      
     
 <script src="cotacao.js"></script>
 <script src="mascaraMoeda.js"></script> 

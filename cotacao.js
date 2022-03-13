@@ -23,11 +23,11 @@ r.json()
 .catch(err => console.log('ERROR 404'))
 
 function funcaoClear(){
-    localStorage.dolarStorage = 0; 
+    localStorage.dolarStorage = ''; 
     document.getElementById('resDolar').innerText = '' ;
-    localStorage.euroStorage = 0; 
+    localStorage.euroStorage = ''; 
     document.getElementById('resEuro').innerText = '' ;
-    localStorage.bitcoinStorage = 0; 
+    localStorage.bitcoinStorage = ''; 
     document.getElementById('resBitcoin').innerText = '' ;
 
     var audio = document.getElementById('chatAudio');
@@ -39,7 +39,7 @@ function funcaoClear(){
         document.getElementById('bitcoinDown').innerText = ('')            
 }
 
-function valor(){
+function valor(){    
 let inputDolar = document.getElementById("inputDolar").value;
 let cleanInputDolar = inputDolar.replace(/[^0-9,]*/g, "").replace(",", ".");
 let valorDigitadoDolar = parseFloat(cleanInputDolar);
@@ -60,7 +60,7 @@ window.location.reload()
 myPromiseDolar.then((data) => {
     var dolar = (parseFloat(data))
     var valorMinimoDolar = localStorage.dolarStorage; 
-   document.getElementById('resDolar').innerText = "Último valor escolhido-Dolar R$ " + valorMinimoDolar;
+   document.getElementById('resDolar').innerText = "Último valor escolhido-Dolar R$ " + valorMinimoDolar; 
         if(dolar < valorMinimoDolar){
             console.log("ATENÇÃO - Dólar Baixou para " + dolar)
             var audio = document.getElementById('chatAudio');
