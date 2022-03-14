@@ -10,7 +10,7 @@ if (minutos <=9){
 if(mes <=9){
     mes = '0'+ mes;
 }
-document.getElementById('current_date').innerText = ("Hoje é dia " + dia + "/" + mes + "/" + ano + " -  Agora são " + horas + ":" + minutos +" horário de Brasilia");
+document.getElementById('current_date').innerText = (`Hoje é dia ${dia} / ${mes} / ${ano} -  Agora são ${horas}: ${minutos} Horário de Brasilia`);
 
 setTimeout(function () {
   window.location.reload(1);

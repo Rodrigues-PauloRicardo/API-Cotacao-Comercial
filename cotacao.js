@@ -60,9 +60,9 @@ window.location.reload()
 myPromiseDolar.then((data) => {
     var dolar = (parseFloat(data))
     var valorMinimoDolar = localStorage.dolarStorage; 
-   document.getElementById('resDolar').innerText = "Último valor escolhido-Dolar R$ " + valorMinimoDolar; 
+   document.getElementById('resDolar').innerText = `Último valor escolhido-Dolar R$ ${valorMinimoDolar}`; 
         if(dolar < valorMinimoDolar){
-            console.log("ATENÇÃO - Dólar Baixou para " + dolar)
+            console.log(`ATENÇÃO - Dólar Baixou para ${dolar}`)
             var audio = document.getElementById('chatAudio');
             audio.play()
             document.getElementById('dolarDown').innerText = ('ATENÇÃO DÓLAR BAIXOU!!')
@@ -71,9 +71,9 @@ myPromiseDolar.then((data) => {
     myPromiseEuro.then((data) => {
         var euro = (parseFloat(data))
         var valorMinimoEuro = localStorage.euroStorage; 
-        document.getElementById('resEuro').innerText = "Último valor escolhido-Euro R$ " + valorMinimoEuro;
+        document.getElementById('resEuro').innerText = `Último valor escolhido-Euro R$ ${valorMinimoEuro}`;
             if(euro < valorMinimoEuro){
-                console.log("ATENÇÃO - Euro Baixou para " + euro)
+                console.log(`ATENÇÃO - Euro Baixou para ${euro}`)
                 var audio = document.getElementById('chatAudio');
                 audio.play()
                 document.getElementById('euroDown').innerText = ('ATENÇÃO EURO BAIXOU!!')
@@ -82,9 +82,9 @@ myPromiseDolar.then((data) => {
         myPromiseBitcoin.then((data) => {
             var bitcoin = (parseFloat(data))
             var valorMinimoBitcoin = localStorage.bitcoinStorage; 
-            document.getElementById('resBitcoin').innerText = "Último valor escolhido-Bitcoin R$ " + valorMinimoBitcoin;
+            document.getElementById('resBitcoin').innerText = `Último valor escolhido-Bitcoin R$ ${valorMinimoBitcoin}`;
                 if(bitcoin < valorMinimoBitcoin){
-                    console.log("ATENÇÃO - Bitcoin Baixou para " + bitcoin)
+                    console.log(`ATENÇÃO - Bitcoin Baixou para ${bitcoin}`)
                     var audio = document.getElementById('chatAudio');
                     audio.play()
                     document.getElementById('bitcoinDown').innerText = ('ATENÇÃO BITCOIN BAIXOU!!')
