@@ -26,7 +26,6 @@ HTML, CSS e Javascript
 <img src=https://github.com/Rodrigues-PauloRicardo/API-Cotacao-Comercial/blob/main/capturaImg.jpg width="700px">
 <br>
 
-
 <h2>MIT License</h2>
 Copyright (c) <2022 -- Paulo Ricardo>
 

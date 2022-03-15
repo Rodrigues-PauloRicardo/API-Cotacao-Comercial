@@ -1,9 +1,9 @@
-var dataAtual = new Date();
-var dia = dataAtual.getDate();
-var mes = (dataAtual.getMonth() + 1);
-var ano = dataAtual.getFullYear();
-var horas = dataAtual.getHours();
-var minutos = dataAtual.getMinutes();
+let dataAtual = new Date();
+let dia = dataAtual.getDate();
+let mes = (dataAtual.getMonth() + 1);
+let ano = dataAtual.getFullYear();
+let horas = dataAtual.getHours();
+let minutos = dataAtual.getMinutes();
 if (minutos <=9){
     minutos = '0'+ minutos;
 }

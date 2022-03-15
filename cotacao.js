@@ -2,10 +2,7 @@ const myPromiseDolar = fetch(`https://economia.awesomeapi.com.br/last/USD-BRL,EU
 .then((response) =>
 response.json()
 )
-
-/*.then(data => console.log(data.USDBRL)) ask e bid*/
-.then(data => document.getElementById("dolar").innerHTML = (data.USDBRL.ask))
- 
+.then(data => document.getElementById("dolar").innerHTML = (data.USDBRL.ask)) 
 .catch(err => console.log('ERROR 404'))
 
 const myPromiseEuro = fetch (`https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL`)
