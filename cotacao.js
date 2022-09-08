@@ -36,10 +36,12 @@ function funcaoClear(){
         document.getElementById('bitcoinDown').innerText = ('')            
 }
 
+
 function valor(){    
 let inputDolar = document.getElementById("inputDolar").value;
 let cleanInputDolar = inputDolar.replace(/[^0-9,]*/g, "").replace(",", ".");
 let valorDigitadoDolar = parseFloat(cleanInputDolar);
+
 localStorage.dolarStorage = valorDigitadoDolar;
 
 let inputEuro = document.getElementById("inputEuro").value;
