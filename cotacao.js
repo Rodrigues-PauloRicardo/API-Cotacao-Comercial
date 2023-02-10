@@ -70,7 +70,7 @@ myPromiseDolar.then((data) => {
     myPromiseEuro.then((data) => {
         var euro = (parseFloat(data))
         var valorMinimoEuro = localStorage.euroStorage; 
-        document.getElementById('resEuro').innerText = `Último valor escolhido-Euro R$ ${valorMinimoEuro}`;
+        document.getElementById('resEuro').innerText = `Último valor escolhido-Euro R$ ${valorMinimoEuro}.`;
             if(euro < valorMinimoEuro){
                 console.log(`ATENÇÃO - Euro Baixou para ${euro}`)
                 var audio = document.getElementById('chatAudio');
