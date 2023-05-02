@@ -6,7 +6,7 @@ section{
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-align: center;
+    text-align: center;   
 }
 .title{ 
     display: flex;   
@@ -67,21 +67,34 @@ hr{
     width: 400px;
     height: 30px;   
 }
+@media screen and (max-width:500px) {
+    .boxTitle{
+        max-width: 300px;        
+    }
+}
+
 #dolar, #euro, #bitcoin{
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(167, 211, 211);
-    width: 400px;
-    height: 30px;   
+    width: 400px;        
+    height: 30px;  
+    border: 1px solid black; 
+}
+@media screen and (max-width:500px) {
+    #dolar, #euro, #bitcoin{
+        max-width: 300px;        
+    }
 }
 #dolarDown, #euroDown, #bitcoinDown{
     font-size: 5vw;
     color: red;
     font-family: serif;
     animation: animate 1.5s linear infinite;
- } 
+ }
+ 
   
  @keyframes animate{
    0%{
